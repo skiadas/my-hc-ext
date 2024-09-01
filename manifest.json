@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "MyHanover Extension",
+  "description": "Extension to help work with the my.hanover.edu site. Of limited interest, to faculty and staff of Hanover College.",
+  "version": "0.0.1",
+  "icons": {
+    "16": "images/my-hc-ext-16.png",
+    "32": "images/my-hc-ext-32.png",
+    "48": "images/my-hc-ext-48.png",
+    "128": "images/my-hc-ext-128.png"
+  },
+  "action": {
+    "default_title": "Click to activate"
+  },
+  "permissions": [
+    "activeTab", "scripting", "webNavigation"
+  ],
+  "host_permissions": [
+    "https://my.hanover.edu/ICS/Academic/Registrar_Faculty/Faculty_Manual.jnz",
+    "https://policies.hanover.edu/*"
+  ],
+  "background": {
+    "service_worker": "scripts/service_worker.js"
+  }
+}

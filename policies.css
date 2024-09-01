@@ -1,0 +1,24 @@
+.inserted-content-row.hidden td div,
+.inserted-content-row.hidden td button.collapse,
+.inserted-content-row td button.expand,
+.toggler .hidden {
+  display: none;
+}
+
+.inserted-content-row.hidden td button.expand {
+  display: inline-block;
+}
+
+.inserted-content-row td {
+  margin: 20px;
+  border: 1px solid gray;
+  background-color: #f5ffff;
+}
+
+.toggler {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  border: 1px solid black;
+  z-index: 10;
+}
